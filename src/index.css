@@ -1,0 +1,613 @@
+/* CSS Kustom */
+.navbar-nav {
+  margin-left: auto;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin-right: 55px;
+}
+
+/* CSS Kustom untuk gaya teks "Nama" */
+.brand-text {
+  margin-left: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-navbar {
+  background-color: #fffefc;
+  color: #fff;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: black;
+  font-weight: bold;
+  /* Warna teks link navigasi */
+
+  /* Efek hover */
+  transition: color 0.3s;
+  /* Animasi warna saat hover */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #ff5555;
+  /* Warna saat elemen dihover */
+}
+
+/* CSS Kustom untuk mengatur ukuran logo */
+.navbar-brand img {
+  width: 70px;
+  /* Ganti ukuran sesuai kebutuhan */
+  height: auto;
+  /* Biarkan tinggi otomatis untuk menjaga perbandingan aspek gambar */
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    height: 630px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  opacity: 0;
+  border: 3px solid #ff5555; /* Tambahkan border pada gambar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tambahkan border radius pada perangkat desktop */
+@media (min-width: 468px) {
+  .slide {
+    border-radius: 10px;
+  }
+}
+
+/* Tambahkan keyframes untuk efek pada slide */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide.active {
+  animation: fadeIn 1s; /* Terapkan keyframes pada slide aktif */
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.arrow span {
+  font-size: 30px;
+}
+
+/* Dalam file Anda.css atau Anda bisa membuat file khusus seperti Contact.css */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff5555;
+}
+
+/* Dalam file CSS Anda */
+.custom-button {
+  background-color: #0062CC;
+  width: 200px;
+  /* Menetapkan lebar tetap */
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dalam file Footer.css */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.form-layout {
+  min-height: 65vh;
+}
+/* Kontak.css */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+/* CSS Kustom */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+/* Gaya teks judul login */
+.login-card h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Gaya elemen input dan label */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+/* Gaya tombol "Login" */
+form button {
+  background-color: #ff5555;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Efek hover pada tombol "Login" */
+form button:hover {
+  background-color: #191414;
+}
+
+/* CSS Kustom untuk elemen "Register" */
+.form-register {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-register a {
+  color: #0074d9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-register a:hover {
+  text-decoration: underline;
+  /* Garis bawah saat tautan "Register" dihover */
+}
+
+/* Tampilan Content */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+
+/* RESPONSIVE CSS */
+@media (max-width: 767px) {
+  .navbar-nav li {
+    margin-right: 25px;
+  }
+
+  .brand-text {
+    margin-left: 0;
+  }
+
+  .slider-container {
+    height: 400px;
+  }
+
+  .slide {
+    border: none;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrow span {
+    font-size: 20px;
+  }
+
+  .login-card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-nav li {
+    margin-right: 15px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .slider-container {
+    height: 300px;
+  }
+
+  .arrow {
+    width: 15px;
+    height: 15px;
+  }
+
+  .arrow span {
+    font-size: 15px;
+  }
+
+  .login-card {
+    max-width: 250px;
+  }
+}
+
+/* ini Checkout */
+
+.title {
+  margin-bottom: 5vh;
+}
+
+.card {
+  margin: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+@media(max-width:767px) {
+  .card {
+    margin: 3vh auto;
+  }
+}
+
+.cart {
+  background-color: #fff;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+@media(max-width:767px) {
+  .cart {
+    padding: 4vh;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.summary {
+  background-color: #ddd;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65);
+}
+
+@media(max-width:767px) {
+  .summary {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.summary .col-2 {
+  padding: 0;
+}
+
+.summary .col-10 {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  color: black;
+  font-weight: bold;
+}
+
+.title b {
+  font-size: 1.5rem;
+}
+
+.main {
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+
+.col-2,
+.col {
+  padding: 0 1vh;
+  color: black;
+}
+
+a {
+  padding: 0 1vh;
+}
+
+.close {
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+
+img {
+  width: 9.5rem;
+}
+
+.back-to-shop {
+  margin-top: 4.5rem;
+}
+
+h5 {
+  margin-top: 4vh;
+}
+
+hr {
+  margin-top: 1.25rem;
+}
+
+form {
+  padding: 2vh 0;
+}
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.btn {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  width: 80%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 20px;
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  -webkit-box-shadow: none;
+  -webkit-user-select: none;
+  transition: none;
+}
+
+.btn:hover {
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Dashboard Styles */
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  border-right: 1px solid #d3d3d3;
+  background-color:#fff;
+  color: white;
+}
+
+#sidebar .nav-item {
+  padding: 8px 0;
+}
+
+#sidebar .nav-link {
+  color: black;
+}
+
+#sidebar .nav-link:hover {
+  background-color: #ff5555;
+  border-radius: 25px;
+}
+
+/* Main Content Styles */
+#content {
+  background-color: #ddd;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #343a40;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #d4d4d4;
+}
+/* User Login Table Styles */
+.user-login-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.user-login-table th,
+.user-login-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-login-table th {
+  background-color: #ff5555;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-login-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-login-table tr:hover {
+  background-color: #d4d4d4;
+}
+
+/* Actions Column Styles */
+.user-login-table .actions-column {
+  width: 100px;
+}
+
+.user-login-table .actions-column button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-login-table .actions-column button.edit {
+  background-color: #ffc107;
+}
+
+.user-login-table .actions-column button.delete {
+  background-color: #dc3545;
+}
